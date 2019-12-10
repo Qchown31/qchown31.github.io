@@ -1,0 +1,85 @@
+/* resets */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero section */
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  margin: none;
+}
+
+.demo .large-header {
+  background-image: url("/assets/images/photo-of-starry-night-1421903.jpg");
+  margin: none;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  max-width: 1500px;
+  color: #f9f1e9;
+  text-align: center;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  margin: none;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo .main-title {
+    font-size: 3em;
+  }
+}
