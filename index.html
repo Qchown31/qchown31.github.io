@@ -5,23 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>QChown</title>
   </head>
   <body>
+      <nav>  
+          <ul id="head" class="flex">
+            <!-- <li><a href="index.html">
+              <img id="logo" src="./assets/images/78341751_1014684978885709_576231572848508928_n.png" alt="Binary Beasts"></a> 
+            </li> -->
+          <div id="navFlex">
+            <li><a class="head" href="#About-anchor">About Me</a></li>
+            <li><a class="head" href="services.html">Services</a></li>
+            <li><a class="head" href="samples.html">Samples</a></li>
+            <li><a class="head" href="contact_roy.html">Contact</a></li>
+          </ul>
+        </div>
+        </nav>
+
+
+
+
+          <!-- hidden hamburger menu -->
+      <nav id="mobile">
+            <div id="menuToggle">
+              <input id="check" type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                  <!-- <img class="logo" src="./assets/images/78341751_1014684978885709_576231572848508928_n.png" alt="Binary Beasts"></a>  -->
+                </li>
+                <li><a class="head" href="about.html">About Me</a></li>
+                <li><a class="head" href="services.html">Services</a></li>
+                <li><a class="head" href="samples.html">Samples</a></li>
+                <li><a class="head" href="contact_roy.html">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+    
     <div class="container demo">
       <div class="content">
         <div id="large-header" class="large-header">
           <canvas id="demo-canvas"></canvas>
           <h1 class="main-title">
             <span class="thin">Quentin Chown</span> <br />
-            Full Stack Web Developer
+            <p id="FS">Full Stack Web Developer</p><br /> 
+            <p id="arrow-down">↓</p>
           </h1>
         </div>
       </div>
     </div>
-    <div class="layer"></div>
+
+
+    <a id="About-anchor" ></a>
+    <h1  id="About" >About Me</h1>
+    
+<div id="about-grid">
+    <div class="About" >
+      <ul class="Detail">
+        <li>
+          <img id="about-one" class="service-img" src="./assets/images/html-5.svg" alt="">
+        </li>
+      </ul>
+      <ul class="Detail">
+        <li>
+          <img id="about-two" class="service-img" src="./assets/images/wordpress.svg" alt="">
+        </li>
+      </ul>
+      <ul class="Detail">
+        <li>
+          <img id="about-three" class="service-img" src="./assets/images/css.svg" alt="">
+        </li>
+      </ul>
+      <ul class="Detail">
+        <li>
+          <img id="about-four" class="service-img" src="./assets/images/java-script.svg" alt="">
+        </li>
+      </ul>
+      <ul class="Detail">
+        <li>
+          <img id="about-five" class="service-img" src="./assets/images/react.svg" alt="">
+        </li>
+      </ul>
+      <ul class="Detail">
+        <li>
+          <img id="about-six" class="service-img" src="./assets/images/database.svg" alt="">
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <div id="skills">
+  </div>
+  
+  <div id="target">
+<h3>TESTESTS TSE TS T SE TSE TSET</h3>
+</div>
+
+
+  <div id="icon-cred">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <script src="/like_button.js"></script> -->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    <script src="/jquery.waypoints.min.js"></script>
+    <script src="/index.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,251 @@
+/* fixed nav */
+@import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.space {
+  height: 100px;
+}
+
+#navFlex {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  position: absolute;
+  right: 40px;
+  width: 50vw;
+}
+
+a.head {
+  color: #eeebe5;
+  font-family: "Alatsi", sans-serif;
+  margin: 10px auto;
+  font-size: 1.6em;
+}
+
+.flex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 4em;
+  /* background-color: #222522; */
+}
+ul#menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 140px;
+  width: 250px;
+  height: 250px;
+  background: #22252200;
+}
+
+ul#head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: none;
+  margin: auto;
+  z-index: 10;
+}
+
+a {
+  color: #18181e;
+}
+
+a.ham {
+  color: #dec79b;
+}
+
+img#logo {
+  height: 3em;
+  margin-left: 20px;
+}
+
+/* hidden nav */
+
+nav#mobile {
+  display: none;
+}
+
+nav li:hover {
+  transform: scale(1.2);
+}
+
+/* phone burger menu */
+@media only screen and (max-width: 800px) {
+  ul#menu > li {
+    margin: 10px;
+  }
+
+  #navFlex {
+    display: none;
+  }
+
+  ul#head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: none;
+    margin: auto;
+    z-index: 10;
+  }
+  a.head {
+    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 10px;
+  }
+
+  nav#mobile {
+    display: block;
+  }
+
+  ul#head :nth-child(n + 2) {
+    display: none;
+  }
+
+  a {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  /* hamburger menu */
+  #menuToggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: fixed;
+    top: 10px;
+    left: 14px;
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+
+  /* making the hamburger */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #c5b358;
+    border-radius: 3px;
+
+    z-index: 2;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* make burger into the X */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #c5b358;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  li {
+    text-align: center;
+  }
+
+  #menu {
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 10px;
+    top: 172px;
+
+    background: #103112;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /* making the transition */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+}
+
+/* Sticky */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 63.99px;
+  background: rgb(255, 255, 255);
+  z-index: 10000;
+}
+
+.sticky li a:link,
+.sticky li a:visited {
+  padding: -100px, 0;
+  color: #18181e;
+  /* border-bottom: 2px solid transparent; */
+}
+
+a.stickyli {
+  color: #eeebe5;
+  font-family: "Alatsi", sans-serif;
+  font-size: 1.6em;
+}
+
+a.stickyli:hover {
+  border-bottom: 2px solid rgb(228, 214, 21);
+}
+
+ul#head.flex .sticky {
+  box-shadow: 0 2px 2px rgb(200, 199, 199);
+}

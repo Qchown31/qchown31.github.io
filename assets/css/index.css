@@ -1,4 +1,5 @@
 /* resets */
+@import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
 
 html {
   box-sizing: border-box;
@@ -61,7 +62,7 @@ img {
   max-width: 1500px;
   color: #f9f1e9;
   text-align: center;
-  top: 75%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
@@ -82,4 +83,60 @@ img {
   .demo .main-title {
     font-size: 3em;
   }
+}
+
+/* About Section */
+
+h1#About {
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100px;
+  background: rgb(218, 178, 178);
+  font-family: "Alatsi", sans-serif;
+}
+
+#About-anchor {
+  position: relative;
+  top: -60px;
+}
+
+#FS {
+  font-size: 0.7em;
+}
+
+div.About {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+ul.Detail {
+  margin: auto;
+  width: 100px;
+}
+
+img.service-img {
+  width: 100px;
+  display: block;
+}
+
+#skills {
+  height: 100vh;
+}
+
+#button-skill {
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  position: relative;
+
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
