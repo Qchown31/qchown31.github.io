@@ -1,5 +1,5 @@
 /* resets */
-@import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 
 html {
   box-sizing: border-box;
@@ -38,7 +38,9 @@ img {
 }
 
 /* Hero section */
-
+#FS {
+  font-size: 0.7em;
+}
 .large-header {
   position: relative;
   width: 100%;
@@ -51,7 +53,7 @@ img {
 }
 
 .demo .large-header {
-  background-image: url("/assets/images/photo-of-starry-night-1421903.jpg");
+  background-image: url('/assets/images/photo-of-starry-night-1421903.jpg');
   margin: none;
 }
 
@@ -86,15 +88,23 @@ img {
 }
 
 /* About Section */
-
+div#about-grid {
+  width: 80%;
+  max-width: 2000px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 50% 50%;
+  margin: 100px auto;
+}
 h1#About {
   text-align: center;
   padding: 25px;
   margin-bottom: 30px;
   width: 100%;
   height: 100px;
-  background: rgb(218, 178, 178);
-  font-family: "Alatsi", sans-serif;
+  background: rgb(47, 42, 42);
+  color: rgb(222, 225, 226);
+  font-family: 'Alatsi', sans-serif;
 }
 
 #About-anchor {
@@ -102,16 +112,39 @@ h1#About {
   top: -60px;
 }
 
-#FS {
-  font-size: 0.7em;
+img#Qchown {
+  height: 250px;
+  float: left;
+  /* border-radius: 50%; */
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+
+  shape-outside: ellipse();
+  padding-right: 10px;
 }
 
+p#about-qchown {
+  font-family: 'Alatsi', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  color: rgb(53, 51, 51);
+}
 div.About {
-  width: 80vw;
+  /* width: 100%; */
+  max-width: 750px;
   margin: auto;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+}
+
+div#about-text {
+  max-width: 750px;
+  margin: auto;
+  display: none;
 }
 ul.Detail {
   margin: auto;
@@ -120,23 +153,179 @@ ul.Detail {
 
 img.service-img {
   width: 100px;
+  height: 100px;
   display: block;
+}
+
+div#skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80vw;
+  margin: auto;
+  max-width: 2000px;
+}
+
+.skill-text {
+  text-align: center;
+  max-width: 250px;
+  font-family: 'Alatsi', sans-serif;
+}
+
+h2.skill-text {
+  padding-bottom: 10px;
+  font-size: 1.6em;
+}
+
+p.skill-text {
+  font-size: 1.05em;
 }
 
 #skills {
   height: 100vh;
 }
 
-#button-skill {
-  margin: auto;
-  text-align: center;
+img.skills {
+  height: 200px;
+  width: 200px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  /* border-radius: 50%;
+  box-shadow: 0 2px 2px; */
+}
+div.skill-block:hover {
+  transform: scale(1.5);
+  transition: ease-in 0.5s;
+  /* transition: ease-out 2s; */
+}
+/* img.skills:hover {
+  cursor: default;
+  transform: scale(1.5);
+  transition: all 0.2s ease-in-out 0s;
+} */
+
+img.service-img:hover {
+  transform: scale(1.5);
 }
 
-button {
-  position: relative;
+@media only screen and (max-width: 995px) {
+  #skills {
+    background: red;
+  }
 
+  div#about-grid {
+    width: 80%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: auto;
+    max-width: 70vw;
+  }
+
+  div.About {
+    margin: auto;
+    max-width: 70vw;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-bottom: 50px;
+  }
+  img.service-img {
+    height: 75px;
+  }
+
+  img#Qchown {
+    height: 200px;
+  }
+
+  div#about-text {
+    grid-column: 1/3;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  #skills {
+    background: blue;
+  }
+
+  div#about-grid {
+    width: 80%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: 1fr;
+    margin: auto;
+    max-width: 70vw;
+  }
+
+  div.About {
+    margin: auto;
+    max-width: 70vw;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-bottom: 50px;
+  }
+
+  p#about-qchown {
+    font-size: 1.2em;
+  }
+  img.service-img {
+    height: 75px;
+  }
+
+  img#Qchown {
+    height: 150px;
+  }
+
+  div#about-text {
+    grid-column: 1/3;
+  }
+}
+
+/* **** Animations **** */
+
+.hide {
+  opacity: 0;
+}
+
+/* Drink api */
+
+.card,
+button {
+  padding: 1em;
+  line-height: 1.5em;
+  font-family: 'Bitter', serif;
+  font-size: larger;
+  border-radius: 20px;
   margin: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  max-width: 650px;
+  background-color: #201e1e;
+  display: grid;
+  color: #fff;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+#container {
+  margin: auto;
+  border-radius: 20px;
+  width: 650px;
+  height: 500px;
+  background-color: #201e1e;
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  border-radius: 10px;
+}
+
+h1.title {
+  text-align: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }

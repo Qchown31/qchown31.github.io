@@ -225,15 +225,14 @@ nav li:hover {
   left: 0;
   width: 100%;
   height: 63.99px;
-  background: rgb(255, 255, 255);
+  background: rgb(47, 42, 42);
   z-index: 10000;
 }
 
 .sticky li a:link,
 .sticky li a:visited {
   padding: -100px, 0;
-  color: #18181e;
-  /* border-bottom: 2px solid transparent; */
+  color: #9c9b9b;
 }
 
 a.stickyli {
@@ -246,6 +245,6 @@ a.stickyli:hover {
   border-bottom: 2px solid rgb(228, 214, 21);
 }
 
-ul#head.flex .sticky {
-  box-shadow: 0 2px 2px rgb(200, 199, 199);
+.sticky ul#head.flex {
+  box-shadow: 0 2px 2px rgb(73, 73, 73);
 }

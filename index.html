@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/index.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>QChown</title>
   </head>
@@ -59,41 +60,135 @@
     </div>
 
 
-    <a id="About-anchor" ></a>
+    <div id="About-anchor" ></div>
     <h1  id="About" >About Me</h1>
     
 <div id="about-grid">
+  <div id="about-text hide">
+    <img id="Qchown" class="hide" src="/assets/images/Qchown.jpg" alt="">
+    <p id="about-qchown" class="hide" >My name is Quentin Chown and I am aspiring Full Stack Developer. I just recently finished my Fast-Track Web Developpement course through SAIT here in Calgary, Alberta. I begin my journey into the web development world in January 2020 as a practicum student at The Mustard Seed. During my practicum I expect to perfect my skills in PHP and Wordpress while improving my skills in HTML, CSS and javaScript. </p>
+  </div>
     <div class="About" >
       <ul class="Detail">
         <li>
-          <img id="about-one" class="service-img" src="./assets/images/html-5.svg" alt="">
+          <img id="skill01"  class="service-img hide" src="./assets/images/html-5.svg" alt="">
         </li>
       </ul>
       <ul class="Detail">
         <li>
-          <img id="about-two" class="service-img" src="./assets/images/wordpress.svg" alt="">
+          <img id="skill02" class="service-img hide" src="./assets/images/wordpress.svg" alt="">
+        </li>
+      </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill03"  class="service-img hide" src="./assets/images/nodejs.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+        <li>
+          <img id="skill04"  class="service-img hide" src="./assets/images/css.svg" alt="">
         </li>
       </ul>
       <ul class="Detail">
         <li>
-          <img id="about-three" class="service-img" src="./assets/images/css.svg" alt="">
+          <img id="skill05" class="service-img hide" src="./assets/images/javascript-1.svg" alt="">
         </li>
       </ul>
       <ul class="Detail">
         <li>
-          <img id="about-four" class="service-img" src="./assets/images/java-script.svg" alt="">
+          <img id="skill06" class="service-img hide" src="./assets/images/react.svg" alt="">
         </li>
       </ul>
       <ul class="Detail">
         <li>
-          <img id="about-five" class="service-img" src="./assets/images/react.svg" alt="">
+          <img id="skill07"  class="service-img hide" src="./assets/images/mongodb.svg" alt="">
         </li>
       </ul>
       <ul class="Detail">
-        <li>
-          <img id="about-six" class="service-img" src="./assets/images/database.svg" alt="">
-        </li>
-      </ul>
+          <li>
+            <img id="skill08" class="service-img hide" src="./assets/images/jquery-1.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill09" class="service-img hide" src="./assets/images/jekyll.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill10"  class="service-img hide" src="./assets/images/sass-1.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill11" class="service-img hide" src="./assets/images/python-5.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill12" class="service-img hide" src="./assets/images/php.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill13" class="service-img hide" src="./assets/images/github-2.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill14" class="service-img hide" src="./assets/images/ruby.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill15" class="service-img hide" src="./assets/images/photoshop-cc.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill16" class="service-img hide" src="./assets/images/adobe-illustrator-cc.svg" alt="">
+          </li>
+        </ul>
+      <ul class="Detail">
+          <li>
+            <img id="skill17" class="service-img hide" src="./assets/images/git-icon.svg" alt="">
+          </li>
+        </ul>
+
+  </div>
+</div>
+
+
+<div id="skill" >
+  <div class="skill-block ">
+          <img  class="skills  hide"  src="./assets/images/responsive.svg" alt="">
+          <h2 class="skill-text  hide">Responsiveness </h2>
+          <p class="skill-text  hide"> My projects will work on any device big or small! </p>
+        </div>
+  <div class="skill-block ">
+
+          <img class="skills hide  "   src="./assets/images/diagram.svg" alt="">
+          <h2 class="skill-text  hide">SEO </h2>
+          <p class="skill-text  hide">Ensuring optimal SEO to increaase quality of each project while increase web traffic</p>
+</div>
+          <div class="skill-block  ">
+
+          <img class="skills  hide"  src="./assets/images/performance.svg" alt="">
+          <h2 class="skill-text  hide">Speed </h2>
+          <p class="skill-text  hide">Giving each web page fast load times with precise coding practices </p>
+</div>
+          <div class="skill-block ">
+
+          <img class="skills  hide" src="./assets/images/web-design.svg" alt="">
+          <h2 class="skill-text  hide">UX/Ui design</h2>
+          <p class="skill-text  hide">Beautiful web designs with simple animations the bring the page to life</p>
+</div>
+</div>
+
+
+<div id="skills">
+    <button id="random">Get Random Drink</button>
+    <div id="container"></div>
   </div>
 </div>
 
@@ -101,27 +196,18 @@
 
 
 
-
-
-
-  <div id="skills">
-  </div>
   
-  <div id="target">
-<h3>TESTESTS TSE TS T SE TSE TSET</h3>
-</div>
 
 
-  <div id="icon-cred">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-  <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-  <script src="/like_button.js"></script> -->
+
+
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
     <script src="/jquery.waypoints.min.js"></script>
     <script src="/index.js"></script>
+    <script src="/drink.js"></script>
 
   </body>
 </html>
