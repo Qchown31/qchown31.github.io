@@ -14,7 +14,8 @@ fetch('https://the-cocktail-db.p.rapidapi.com/random.php?', {
     x.drinks.forEach(writeToPage);
 
     random.addEventListener('click', function() {
-      window.location.reload();
+      // window.location.reload();
+      document.querySelector('#container').reRender();
     });
 
     // vodka.addEventListener('click', function(){
