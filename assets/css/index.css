@@ -298,7 +298,7 @@ button {
   max-width: 650px;
   background-color: #201e1e;
   display: grid;
-  color: #fff;
+  color: #f4a950;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 10px;
 }
@@ -309,6 +309,7 @@ button {
   width: 650px;
   height: 500px;
   background-color: #201e1e;
+  margin-bottom: 250px;
 }
 
 .image {
@@ -340,4 +341,184 @@ h1#example-header {
   background: rgb(47, 42, 42);
   color: rgb(222, 225, 226);
   font-family: 'Alatsi', sans-serif;
+}
+
+div#star-wars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 80vw;
+  margin: 250px auto;
+}
+
+div.Sw-head {
+  text-align: center;
+}
+
+img#SW-API {
+  border-radius: 20px;
+  width: 50vw;
+}
+
+@media (max-width: 1350px) {
+  div#star-wars {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    align-items: center;
+    width: 80vw;
+    margin: 250px auto;
+  }
+
+  div#SW-img {
+    width: 750px;
+    margin: auto;
+  }
+
+  img#SW-API {
+    border-radius: 20px;
+    width: 750px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-items: center;
+  }
+
+  div.Sw-head {
+    text-align: center;
+    align-self: flex-end;
+    padding-bottom: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+@media (max-width: 950px) {
+  div#star-wars {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    align-items: center;
+    width: 80vw;
+    margin: 150px auto;
+  }
+
+  div#SW-img {
+    margin: auto;
+    width: 75vw;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  img#SW-API {
+    border-radius: 20px;
+    margin: auto;
+    width: 75vw;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  div.Sw-head {
+    text-align: center;
+    align-self: flex-end;
+    padding-bottom: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+@media (max-width: 800px) {
+  .card,
+  button {
+    padding: 1em;
+    line-height: 1em;
+    font-family: 'Bitter', serif;
+    font-size: medium;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 550px;
+    background-color: #201e1e;
+    display: grid;
+    color: #f4a950;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+  }
+
+  #container {
+    margin: auto;
+    border-radius: 20px;
+    width: 550px;
+    background-color: #201e1e;
+  }
+
+  h1 {
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .card,
+  button {
+    padding: 1em;
+    line-height: 1em;
+    font-family: 'Bitter', serif;
+    font-size: small;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 350px;
+    background-color: #201e1e;
+    display: grid;
+    color: #f4a950;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+  }
+
+  #container {
+    margin: auto;
+    border-radius: 20px;
+    width: 350px;
+    background-color: #201e1e;
+  }
+
+  h1 {
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    border-radius: 10px;
+  }
+}
+
+#mc_embed_signup_scroll {
+  width: 60vw;
+  margin: auto;
+}
+
+/* #contact-section {
+  width: 100%;
+  height: 500px;
+
+  background-color: #201e1e;
+} */
+
+#mc_embed_signup {
+  width: 60vw;
+  margin: 50px auto;
 }

@@ -1,5 +1,5 @@
 /* fixed nav */
-@import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 nav {
   display: flex;
   justify-content: end;
@@ -25,7 +25,7 @@ nav {
 
 a.head {
   color: #eeebe5;
-  font-family: "Alatsi", sans-serif;
+  font-family: 'Alatsi', sans-serif;
   margin: 10px auto;
   font-size: 1.6em;
 }
@@ -89,6 +89,11 @@ nav li:hover {
     margin: 10px;
   }
 
+  ul#menu {
+    background-color: #2f2a2a;
+    height: 220px;
+  }
+
   #navFlex {
     display: none;
   }
@@ -104,6 +109,7 @@ nav li:hover {
   a.head {
     padding: 0.5em 2em 0.5em 2em;
     border-radius: 10px;
+    font-size: 1em;
   }
 
   nav#mobile {
@@ -237,7 +243,7 @@ nav li:hover {
 
 a.stickyli {
   color: #eeebe5;
-  font-family: "Alatsi", sans-serif;
+  font-family: 'Alatsi', sans-serif;
   font-size: 1.6em;
 }
 
