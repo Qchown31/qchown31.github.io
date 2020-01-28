@@ -61,7 +61,7 @@ function writeToPage(text) {
   const ingredientsList = document.createElement('ul');
   ingredientsList.className = 'listHead';
   el.appendChild(ingredientsList);
-  ingredientsList.textContent = 'Ingredients â†“';
+  ingredientsList.textContent = 'Ingredients:';
 
   const ingredients1 = document.createElement('li');
   ingredients1.className = 'list';
