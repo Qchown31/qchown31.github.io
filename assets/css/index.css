@@ -1,6 +1,8 @@
 /* resets */
 @import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 
+
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -88,6 +90,12 @@ img {
 }
 
 /* About Section */
+/* About Section */
+/* About Section */
+/* About Section */
+
+
+
 div#about-grid {
   width: 80%;
   max-width: 2000px;
@@ -286,13 +294,17 @@ div.skill-block:hover {
 }
 
 /* Drink api */
+/* Drink api */
+/* Drink api */
+/* Drink api */
+
 
 .card,
 button {
   padding: 1em;
   line-height: 1.5em;
   font-family: 'Bitter', serif;
-  font-size: larger;
+  font-size: 25px;
   border-radius: 20px;
   margin: auto;
   max-width: 650px;
@@ -332,7 +344,8 @@ h1.title {
 /* Examples section */
 /* *************************** */
 
-h1#example-header {
+h1#example-header,
+h1#contact-header {
   text-align: center;
   padding: 25px;
   margin: 100px auto;
@@ -511,18 +524,89 @@ img#SW-API {
   margin: auto;
 }
 
-/* #contact-section {
-  width: 100%;
-  height: 500px;
 
-  background-color: #201e1e;
-} */
 
-#mc_embed_signup {
-  width: 60vw;
-  margin: 50px auto;
-}
 
 .font {
   font-family: 'Alatsi', sans-serif;
+}
+
+
+/* FORM CSS */
+
+div.contact-form{
+ height: 500px;
+ width: 100%;
+ background-color: #e0dddd;
+}
+
+form {
+  max-width: 650px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+h1#contact-header {
+  margin-bottom: 25px;
+
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+input, textarea {
+  border:0; outline:0;
+  padding: 1em;
+  border: 1px solid black;
+ border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Alatsi', sans-serif;
+  /* box-shadow: 0 1px 1px ; */
+  resize: none;
+  font-size: 18px;
+
+
+}
+
+#input-submit {
+  background: rgb(47, 42, 42);
+  color: rgb(222, 225, 226);
+  cursor: pointer;
+} 
+
+ /* input:hover,
+ textarea:hover {
+     box-shadow: 0 1px 1px 1px ; 
+ } */
+
+ textarea {
+  height: 165px;
+}
+
+/* :focus {
+ box-shadow: 0 0px 2px ;
+} */
+
+::placeholder {
+  color: rgb(112, 108, 108);
+  font-size: 18px;
 }
