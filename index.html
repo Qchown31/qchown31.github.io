@@ -225,12 +225,34 @@
 </div>
 </div>
 
-
 <!-- Contact Form -->
+<h1 id="contact-header">Contact me </h1>
+<div id="form-grid">
+<div id="about-form">
+  <ul id="contact-info">
+    <h3>Contact directly</h3>
+    <li>Quentin Chown</li>
+    <ul>
+    <li>Email</li>
+    <li>qhchown@gmail.com</li>
+  </ul>
+  <ul>
+    <li>Phone</li>
+    <li>1-403-909-7670</li>
+  </ul> 
+   <div id="social-container">
+    <ul id="social">
+      <li><a target="_blank" href="https://twitter.com/quentin_chown"><img class="social-icons" src="/assets/images/icons8-twitter-50.svg" alt="Twitter icon"></a></li>
 
+      <li><a target="_blank" href="https://www.linkedin.com/in/quentin-chown-99b79b171/"><img class="social-icons " src="/assets/images/icons8-linkedin-50.svg" alt="linkedin icon"></a></li>
+
+      <li><a target="_blank" href="https://github.com/Qchown31"><img class="social-icons " src="/assets/images/icons8-github-50.svg" alt="github icon"></a></li>
+    </ul>
+  </div>
+  </ul>
+</div>
 <div class="contact-form">
-  <h1 id="contact-header">Contact me </h1>
-  <form class="cf">
+  <form name="contact" action="post" data-netlify="true" class="cf">
     <div class="half left cf">
       <input type="text" id="input-name" placeholder="Name">
       <input type="email" id="input-email" placeholder="Email address">
@@ -239,9 +261,12 @@
     <div class="half right cf">
       <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
     </div>  
+        <!-- <div>
+          <input type="file" name="myfile" id="myfile" placeholder="Upload File" id="file-upload">
+        </div> -->
     <input type="submit" value="Submit" id="input-submit">
   </form>
-
+</div>
 </div>
 
 

@@ -315,6 +315,8 @@ button {
   grid-gap: 10px;
 }
 
+
+
 #container {
   margin: auto;
   border-radius: 20px;
@@ -536,8 +538,10 @@ img#SW-API {
 
 div.contact-form{
  height: 500px;
- width: 100%;
+ width: 50%;
  background-color: #e0dddd;
+ float: right;
+ padding: 25px;
 }
 
 form {
@@ -547,7 +551,7 @@ form {
 }
 
 h1#contact-header {
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 
 }
 
@@ -563,12 +567,18 @@ h1#contact-header {
      margin-right: 2%; 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .half {
      width: 100%; 
      float: none;
      margin-bottom: 0; 
   }
+  textarea#input-message {
+    height: 120px;
+  }
+
+ 
+ 
 }
 
 input, textarea {
@@ -593,6 +603,18 @@ input, textarea {
   cursor: pointer;
 } 
 
+#about-form {
+  height: 500px;
+  width: 50%;
+  background-color: #201e1e;
+ float: left;
+}
+
+
+/* #file-upload {
+ display: none;
+} */
+
  /* input:hover,
  textarea:hover {
      box-shadow: 0 1px 1px 1px ; 
@@ -609,4 +631,51 @@ input, textarea {
 ::placeholder {
   color: rgb(112, 108, 108);
   font-size: 18px;
+}
+
+/* Contact info */
+
+#contact-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  color: #f9f1e9;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}
+
+#social {
+  display: flex;
+  justify-content: space-around;
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+}
+ #about-form  li {
+font-size: 20px;
+ }
+
+
+@media (max-width: 600px) {
+  #form-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-form {
+    height: 350px;
+    width: 100%;
+    background-color: #201e1e;
+   float: left;
+  }
+
+  div.contact-form{
+    height: 500px;
+    width: 100%;
+    background-color: #e0dddd;
+    float: right;
+    padding: 25px;
+   }
 }
