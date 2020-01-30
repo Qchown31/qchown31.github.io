@@ -110,7 +110,7 @@ h1#About {
   margin-bottom: 30px;
   width: 100%;
   height: 100px;
-  background: rgb(47, 42, 42);
+  background: #00458B;
   color: rgb(222, 225, 226);
   font-family: 'Alatsi', sans-serif;
 }
@@ -308,9 +308,9 @@ button {
   border-radius: 20px;
   margin: auto;
   max-width: 650px;
-  background-color: #201e1e;
+  background-color: #00458B;
   display: grid;
-  color: #f4a950;
+  color: #ffffff;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 10px;
 }
@@ -322,7 +322,7 @@ button {
   border-radius: 20px;
   width: 650px;
   height: 500px;
-  background-color: #201e1e;
+  background-color: #00458B;
   margin-bottom: 250px;
 }
 
@@ -353,7 +353,7 @@ h1#contact-header {
   margin: 100px auto;
   width: 100%;
   height: 100px;
-  background: rgb(47, 42, 42);
+  background: #00458B;
   color: rgb(222, 225, 226);
   font-family: 'Alatsi', sans-serif;
 }
@@ -451,9 +451,9 @@ img#SW-API {
     border-radius: 20px;
     margin: auto;
     max-width: 550px;
-    background-color: #201e1e;
+    background-color: #00458B;
     display: grid;
-    color: #f4a950;
+    color: #faf7f3;
     grid-template-columns: 140px 1fr;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
@@ -463,7 +463,7 @@ img#SW-API {
     margin: auto;
     border-radius: 20px;
     width: 550px;
-    background-color: #201e1e;
+    background-color: #00458B;
   }
 
   h1 {
@@ -491,9 +491,9 @@ img#SW-API {
     border-radius: 20px;
     margin: auto;
     max-width: 350px;
-    background-color: #201e1e;
+    background-color: #00458B;
     display: grid;
-    color: #f4a950;
+    color: #fafafa;
     grid-template-columns: 120px 1fr;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
@@ -503,7 +503,7 @@ img#SW-API {
     margin: auto;
     border-radius: 20px;
     width: 350px;
-    background-color: #201e1e;
+    background-color: #00458B;
   }
 
   h1 {
@@ -536,10 +536,10 @@ img#SW-API {
 
 /* FORM CSS */
 
-div.contact-form{
+div.contact-form {
  height: 500px;
  width: 50%;
- background-color: #e0dddd;
+ background-color: rgb(216, 215, 215);
  float: right;
  padding: 25px;
 }
@@ -584,7 +584,6 @@ h1#contact-header {
 input, textarea {
   border:0; outline:0;
   padding: 1em;
-  border: 1px solid black;
  border-radius: 8px;
   display: block;
   width: 100%;
@@ -598,15 +597,16 @@ input, textarea {
 }
 
 #input-submit {
-  background: rgb(47, 42, 42);
-  color: rgb(222, 225, 226);
+  background: #00458B;
+  color: #fff;
   cursor: pointer;
+  border: none;
 } 
 
 #about-form {
   height: 500px;
   width: 50%;
-  background-color: #201e1e;
+  background-color: 00458;
  float: left;
 }
 
@@ -641,7 +641,7 @@ input, textarea {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
-  color: #f9f1e9;
+  color: #fff;
   font-family: 'Bitter', serif;
   font-size: 18px;
 }
@@ -650,13 +650,17 @@ input, textarea {
   display: flex;
   justify-content: space-around;
   max-width: 200px;
-  text-align: center;
   margin: auto;
 }
  #about-form  li {
 font-size: 20px;
  }
 
+#form-grid {
+  height: 500px;
+  width: 100%;
+  background-color:  #00458B ;
+}
 
 @media (max-width: 600px) {
   #form-grid {
@@ -667,15 +671,23 @@ font-size: 20px;
   #about-form {
     height: 350px;
     width: 100%;
-    background-color: #201e1e;
+    background-color: #00458B;
    float: left;
   }
 
   div.contact-form{
     height: 500px;
     width: 100%;
-    background-color: #e0dddd;
+    background-color: rgb(216, 215, 215);
     float: right;
     padding: 25px;
    }
+
+   /* #form-grid {
+    height: 850px;
+    width: 100%;
+    background: linear-gradient( #07889b 55%,  #eeaa7b 45% )
+  } */
 }
+
+
