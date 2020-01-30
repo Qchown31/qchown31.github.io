@@ -542,7 +542,11 @@ div.contact-form {
  background-color: rgb(216, 215, 215);
  float: right;
  padding: 25px;
+ border-top-left-radius: 5px;
+ 
 }
+
+
 
 form {
   max-width: 650px;
