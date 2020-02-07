@@ -204,7 +204,7 @@ img.skills {
 }
 div.skill-block:hover {
   transform: scale(1.1);
-  transition: ease-in 0.5s;
+  transition: ease-in 0.2s;
   /* transition: ease-out 2s; */
 }
 /* img.skills:hover {
