@@ -203,7 +203,7 @@ img.skills {
   box-shadow: 0 2px 2px; */
 }
 div.skill-block:hover {
-  transform: scale(1.3);
+  transform: scale(1);
   transition: ease-in 0.5s;
   /* transition: ease-out 2s; */
 }
