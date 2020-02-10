@@ -25,7 +25,7 @@ nav {
 
 a.head {
   color: #eeebe5;
-  font-family: 'Alatsi', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   margin: 10px auto;
   font-size: 1.6em;
 }
@@ -241,7 +241,7 @@ a.head:hover {
 
 a.stickyli {
   color: #eeebe5;
-  font-family: 'Alatsi', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1.6em;
 }
 

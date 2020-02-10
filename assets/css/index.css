@@ -1,6 +1,6 @@
 /* resets */
-@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
 
 html {
@@ -68,10 +68,15 @@ img {
   text-align: center;
   top: 80%;
   left: 50%;
+  font-family: 'Roboto Mono', monospace;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
 
+.font {
+  font-family: 'Roboto Mono', monospace;
+
+}
 .demo .main-title {
   text-transform: uppercase;
   font-size: 4em;
@@ -81,6 +86,11 @@ img {
 
 .main-title .thin {
   font-weight: 100;
+}
+@media only screen and (max-width: 1200px) {
+  .demo .main-title {
+    font-size: 3.5em;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -118,7 +128,8 @@ h1#About {
   height: 100px;
   background: #00458B;
   color: rgb(222, 225, 226);
-  font-family: 'Alatsi', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
 }
 
 #About-anchor {
@@ -138,8 +149,8 @@ img#Qchown {
 }
 
 p#about-qchown {
-  font-family: 'Alatsi', sans-serif;
-  font-size: 1.4em;
+font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
   line-height: 1.3em;
   color: rgb(53, 51, 51);
 }
@@ -183,7 +194,7 @@ div#skill {
 .skill-text {
   text-align: center;
   max-width: 250px;
-  font-family: 'Alatsi', sans-serif;
+font-family: 'Roboto Mono', monospace;
 }
 
 h2.skill-text {
@@ -313,7 +324,7 @@ div.skill-block:hover {
 button {
   padding: 1em;
   line-height: 1.5em;
-  font-family: 'Bitter', serif;
+  font-family: 'Alatsi', sans-serif;
   font-size: 25px;
   border-radius: 20px;
   margin: auto;
@@ -365,7 +376,8 @@ h1#contact-header {
   height: 100px;
   background: #00458B;
   color: rgb(222, 225, 226);
-  font-family: 'Alatsi', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-weight: 600;
 }
 
 div#star-wars {
@@ -456,7 +468,7 @@ img#SW-API {
   button {
     padding: 1em;
     line-height: 1em;
-    font-family: 'Bitter', serif;
+    font-family: 'Alatsi', sans-serif;
     font-size: large;
     border-radius: 20px;
     margin: auto;
@@ -496,7 +508,7 @@ img#SW-API {
   button {
     padding: 1em;
     line-height: 1em;
-    font-family: 'Bitter', serif;
+    font-family: 'Alatsi', sans-serif;
     font-size: medium;
     border-radius: 20px;
     margin: auto;
@@ -539,9 +551,7 @@ img#SW-API {
 
 
 
-.font {
-  font-family: 'Alatsi', sans-serif;
-}
+
 
 
 /* FORM CSS */
@@ -602,7 +612,7 @@ input, textarea {
   display: block;
   width: 100%;
   margin-top: 1em;
-  font-family: 'Alatsi', sans-serif;
+font-family: 'Roboto Mono', monospace;
   /* box-shadow: 0 1px 1px ; */
   resize: none;
   font-size: 18px;
@@ -656,7 +666,7 @@ input, textarea {
   justify-content: space-evenly;
   height: 100%;
   color: #fff;
-  font-family: 'Bitter', serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 18px;
 }
 
