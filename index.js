@@ -76,7 +76,7 @@ $(document).ready(function() {
     },
 
     {
-      offset: '50%'
+      offset: '100%'
     }
   );
 
@@ -326,4 +326,14 @@ $(document).ready(function() {
       offset: '30%'
     }
   );
+ 
+
+    
+  
+    
+   
 });
+
+
+
+

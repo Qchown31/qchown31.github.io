@@ -55,7 +55,7 @@ img {
 }
 
 .demo .large-header {
-  background-image: url('/assets/images/photo-of-starry-night-1421903.jpg');
+  background-image: url('/assets/images/Optimized-photo-of-starry-night-1421903.jpg');
   margin: none;
 }
 
@@ -74,7 +74,7 @@ img {
 
 .demo .main-title {
   text-transform: uppercase;
-  font-size: 4.2em;
+  font-size: 4em;
   margin: none;
   letter-spacing: 0.1em;
 }
@@ -83,9 +83,15 @@ img {
   font-weight: 100;
 }
 
+@media only screen and (max-width: 1000px) {
+  .demo .main-title {
+    font-size: 3.5em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .demo .main-title {
-    font-size: 3em;
+    font-size: 2.6em;
   }
 }
 
@@ -251,6 +257,10 @@ div.skill-block:hover {
 @media only screen and (max-width: 495px) {
   #skills {
     background: blue;
+  }
+
+  .sampleClass {
+    float: none;
   }
 
   div#about-grid {
@@ -447,14 +457,14 @@ img#SW-API {
     padding: 1em;
     line-height: 1em;
     font-family: 'Bitter', serif;
-    font-size: medium;
+    font-size: large;
     border-radius: 20px;
     margin: auto;
     max-width: 550px;
     background-color: #00458B;
     display: grid;
     color: #faf7f3;
-    grid-template-columns: 140px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
   }
@@ -473,28 +483,28 @@ img#SW-API {
   }
 
   .image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     grid-column: 2 / 3;
     grid-row: 2 / 5;
     border-radius: 10px;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
   .card,
   button {
     padding: 1em;
     line-height: 1em;
     font-family: 'Bitter', serif;
-    font-size: small;
+    font-size: medium;
     border-radius: 20px;
     margin: auto;
     max-width: 350px;
     background-color: #00458B;
     display: grid;
     color: #fafafa;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 150px 1fr;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
   }
