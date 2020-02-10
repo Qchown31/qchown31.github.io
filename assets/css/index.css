@@ -1,6 +1,7 @@
 /* resets */
 @import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
 
 html {
@@ -68,14 +69,14 @@ img {
   text-align: center;
   top: 80%;
   left: 50%;
-  font-family: 'Roboto Mono', monospace;
-  -webkit-transform: translate3d(-50%, -50%, 0);
+  font-family: 'Roboto Slab', serif;
+    -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
 
 .font {
-  font-family: 'Roboto Mono', monospace;
-
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .demo .main-title {
   text-transform: uppercase;
@@ -128,8 +129,8 @@ h1#About {
   height: 100px;
   background: #00458B;
   color: rgb(222, 225, 226);
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 600;
+  font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
 }
 
 #About-anchor {
@@ -149,8 +150,8 @@ img#Qchown {
 }
 
 p#about-qchown {
-font-family: 'Roboto Mono', monospace;
-  font-size: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.4em;
   line-height: 1.3em;
   color: rgb(53, 51, 51);
 }
@@ -194,7 +195,7 @@ div#skill {
 .skill-text {
   text-align: center;
   max-width: 250px;
-font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h2.skill-text {
@@ -203,7 +204,7 @@ h2.skill-text {
 }
 
 p.skill-text {
-  font-size: 1.05em;
+  font-size: 1.2em;
 }
 
 #skills {
@@ -376,7 +377,7 @@ h1#contact-header {
   height: 100px;
   background: #00458B;
   color: rgb(222, 225, 226);
-font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Condensed', sans-serif;
 font-weight: 600;
 }
 
@@ -390,6 +391,7 @@ div#star-wars {
 
 div.Sw-head {
   text-align: center;
+  font-size: 1.2em;
 }
 
 img#SW-API {
@@ -612,7 +614,7 @@ input, textarea {
   display: block;
   width: 100%;
   margin-top: 1em;
-font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Condensed', sans-serif;
   /* box-shadow: 0 1px 1px ; */
   resize: none;
   font-size: 18px;
@@ -666,7 +668,7 @@ font-family: 'Roboto Mono', monospace;
   justify-content: space-evenly;
   height: 100%;
   color: #fff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
 }
 
