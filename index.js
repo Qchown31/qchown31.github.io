@@ -326,14 +326,4 @@ $(document).ready(function() {
       offset: '30%'
     }
   );
- 
-
-    
-  
-    
-   
 });
-
-
-
-

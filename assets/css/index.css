@@ -1,8 +1,7 @@
 /* resets */
-@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
-
 
 html {
   box-sizing: border-box;
@@ -70,7 +69,7 @@ img {
   top: 80%;
   left: 50%;
   font-family: 'Roboto Slab', serif;
-    -webkit-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
 
@@ -111,8 +110,6 @@ img {
 /* About Section */
 /* About Section */
 
-
-
 div#about-grid {
   width: 80%;
   max-width: 2000px;
@@ -127,10 +124,10 @@ h1#About {
   margin-bottom: 30px;
   width: 100%;
   height: 100px;
-  background: #00458B;
+  background: #00458b;
   color: rgb(222, 225, 226);
   font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 600;
+  font-weight: 600;
 }
 
 #About-anchor {
@@ -320,7 +317,6 @@ div.skill-block:hover {
 /* Drink api */
 /* Drink api */
 
-
 .card,
 button {
   padding: 1em;
@@ -330,21 +326,19 @@ button {
   border-radius: 20px;
   margin: auto;
   max-width: 650px;
-  background-color: #00458B;
+  background-color: #00458b;
   display: grid;
   color: #ffffff;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 10px;
 }
 
-
-
 #container {
   margin: auto;
   border-radius: 20px;
   width: 650px;
   height: 500px;
-  background-color: #00458B;
+  background-color: #00458b;
   margin-bottom: 250px;
 }
 
@@ -375,10 +369,10 @@ h1#contact-header {
   margin: 100px auto;
   width: 100%;
   height: 100px;
-  background: #00458B;
+  background: #00458b;
   color: rgb(222, 225, 226);
   font-family: 'Roboto Condensed', sans-serif;
-font-weight: 600;
+  font-weight: 600;
 }
 
 div#star-wars {
@@ -475,7 +469,7 @@ img#SW-API {
     border-radius: 20px;
     margin: auto;
     max-width: 550px;
-    background-color: #00458B;
+    background-color: #00458b;
     display: grid;
     color: #faf7f3;
     grid-template-columns: 200px 1fr;
@@ -487,7 +481,7 @@ img#SW-API {
     margin: auto;
     border-radius: 20px;
     width: 550px;
-    background-color: #00458B;
+    background-color: #00458b;
   }
 
   h1 {
@@ -515,7 +509,7 @@ img#SW-API {
     border-radius: 20px;
     margin: auto;
     max-width: 350px;
-    background-color: #00458B;
+    background-color: #00458b;
     display: grid;
     color: #fafafa;
     grid-template-columns: 150px 1fr;
@@ -527,7 +521,7 @@ img#SW-API {
     margin: auto;
     border-radius: 20px;
     width: 350px;
-    background-color: #00458B;
+    background-color: #00458b;
   }
 
   h1 {
@@ -550,25 +544,16 @@ img#SW-API {
   margin: auto;
 }
 
-
-
-
-
-
-
 /* FORM CSS */
 
 div.contact-form {
- height: 500px;
- width: 50%;
- background-color: rgb(216, 215, 215);
- float: right;
- padding: 25px;
- border-top-left-radius: 5px;
- 
+  height: 500px;
+  width: 50%;
+  background-color: rgb(216, 215, 215);
+  float: right;
+  padding: 25px;
+  border-top-left-radius: 5px;
 }
-
-
 
 form {
   max-width: 650px;
@@ -578,7 +563,6 @@ form {
 
 h1#contact-header {
   margin-bottom: 0px;
-
 }
 
 .half {
@@ -587,30 +571,31 @@ h1#contact-header {
   margin-bottom: 1em;
 }
 
-.right { width: 50%; }
+.right {
+  width: 50%;
+}
 
 .left {
-     margin-right: 2%; 
+  margin-right: 2%;
 }
 
 @media (max-width: 900px) {
   .half {
-     width: 100%; 
-     float: none;
-     margin-bottom: 0; 
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
   }
   textarea#input-message {
     height: 120px;
   }
-
- 
- 
 }
 
-input, textarea {
-  border:0; outline:0;
+input,
+textarea {
+  border: 0;
+  outline: 0;
   padding: 1em;
- border-radius: 8px;
+  border-radius: 8px;
   display: block;
   width: 100%;
   margin-top: 1em;
@@ -618,35 +603,32 @@ input, textarea {
   /* box-shadow: 0 1px 1px ; */
   resize: none;
   font-size: 18px;
-
-
 }
 
 #input-submit {
-  background: #00458B;
+  background: #00458b;
   color: #fff;
   cursor: pointer;
   border: none;
-} 
+}
 
 #about-form {
   height: 500px;
   width: 50%;
   background-color: 00458;
- float: left;
+  float: left;
 }
-
 
 /* #file-upload {
  display: none;
 } */
 
- /* input:hover,
+/* input:hover,
  textarea:hover {
      box-shadow: 0 1px 1px 1px ; 
  } */
 
- textarea {
+textarea {
   height: 222px;
 }
 
@@ -678,14 +660,14 @@ input, textarea {
   max-width: 200px;
   margin: auto;
 }
- #about-form  li {
-font-size: 20px;
- }
+#about-form li {
+  font-size: 20px;
+}
 
 #form-grid {
   height: 500px;
   width: 100%;
-  background-color:  #00458B ;
+  background-color: #00458b;
 }
 
 @media (max-width: 600px) {
@@ -697,23 +679,254 @@ font-size: 20px;
   #about-form {
     height: 350px;
     width: 100%;
-    background-color: #00458B;
-   float: left;
+    background-color: #00458b;
+    float: left;
   }
 
-  div.contact-form{
+  div.contact-form {
     height: 500px;
     width: 100%;
     background-color: rgb(216, 215, 215);
     float: right;
     padding: 25px;
-   }
+  }
 
-   /* #form-grid {
+  /* #form-grid {
     height: 850px;
     width: 100%;
     background: linear-gradient( #07889b 55%,  #eeaa7b 45% )
   } */
 }
 
+/* new project section */
+/* new project section */
 
+.grid-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'tertiary01 tertiary02 Main01 Main01 tertiary03 tertiary04'
+    'secondary01 secondary01 Main01 Main01 secondary02 secondary02'
+    'Main02 Main02 secondary03 secondary03 Main03 Main03'
+    'Main02 Main02 tertiary05 tertiary06 Main03 Main03';
+}
+
+.grid-container > div > a {
+  width: 100%;
+  height: 100%;
+}
+.Main01 {
+  grid-area: Main01;
+  background-color: #00458b;
+  border: 1px dotted black;
+  background-image: url(/assets/images/drinkapi002.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Main02 {
+  grid-area: Main02;
+  background-color: rgb(255, 255, 255);
+  border: 1px dotted black;
+  background-image: url(/assets/images/Optimized-star-wars-api.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+.Main03 {
+  grid-area: Main03;
+  background-color: rgb(255, 255, 255);
+  border: 1px dotted black;
+  background-image: url(/assets/images/burgerimg.PNG);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+.secondary01 {
+  grid-area: secondary01;
+  background-color: green;
+  border: 1px dotted black;
+  background-image: url(/assets/images/form-valadation.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+.secondary02 {
+  grid-area: secondary02;
+  background-color: green;
+  border: 1px dotted black;
+}
+
+.secondary03 {
+  grid-area: secondary03;
+  background-color: green;
+  border: 1px dotted black;
+}
+
+.tertiary01 {
+  background-image: url(/assets/images/movieseats.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-area: tertiary01;
+  background-color: #242333;
+  border: 1px dotted black;
+}
+
+.tertiary01:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  height: 100%;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tertiary02 {
+  grid-area: tertiary02;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+.tertiary03 {
+  grid-area: tertiary03;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+.tertiary04 {
+  grid-area: tertiary04;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+.tertiary05 {
+  grid-area: tertiary05;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+.tertiary06 {
+  grid-area: tertiary06;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+@media (max-width: 1250px) {
+  .grid-container {
+    width: 100%;
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 250px);
+    grid-template-areas:
+      'tertiary01 tertiary02 Main01 Main01 '
+      'secondary01 secondary01 Main01 Main01 '
+      'tertiary03 tertiary04 Main02 Main02'
+      'secondary02 secondary02 Main02 Main02'
+      'secondary03 secondary03 Main03 Main03'
+      'tertiary05 tertiary06 Main03 Main03';
+  }
+}
+
+@media (max-width: 720px) {
+  .grid-container {
+    width: 100%;
+    height: 3200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 250px);
+    grid-template-areas:
+      ' Main01 Main01 '
+      ' Main01 Main01 '
+      'tertiary01 tertiary02'
+      'secondary01 secondary01 '
+      ' Main02 Main02'
+      ' Main02 Main02'
+      'tertiary03 tertiary04'
+      'secondary02 secondary02 '
+      ' Main03 Main03'
+      ' Main03 Main03'
+      'secondary03 secondary03'
+      'tertiary05 tertiary06 ';
+  }
+}
+
+.page {
+  padding: 2em;
+  background: #cecece;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.archive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-flow: dense;
+}
+
+.article {
+  padding: 1em;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.article:nth-child(1) {
+  grid-column: 2 / -2;
+  background: rgba(200, 200, 255, 0.3);
+}
+
+.article:nth-child(1) > hr:last-child {
+  margin-right: 20%;
+  height: 28px;
+}
+
+.article:nth-child(1):after {
+  content: 'grid-column: 1 / -1';
+}
+
+.article:nth-child(8) {
+  grid-column: -3 / -1;
+  background: rgba(255, 200, 255, 0.3);
+}
+.article:nth-child(8):after {
+  content: 'grid-column: -3 / -1';
+}
+
+.article:nth-child(12) {
+  grid-column: 1 / -2;
+  background: rgba(255, 200, 255, 0.3);
+}
+
+.article:nth-child(12) > hr:first-child {
+  padding-bottom: 30%;
+}
+
+.article:nth-child(12):after {
+  content: 'grid-column: 1 / -2';
+}
+
+.article:after {
+  color: #808;
+  font-weight: bold;
+  font-family: courier;
+}
+
+@media (max-width: 680px) {
+}
