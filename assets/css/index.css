@@ -703,10 +703,12 @@ textarea {
 
 .grid-container {
   width: 100%;
+  margin: auto;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
   grid-template-areas:
     'tertiary01 tertiary02 Main01 Main01 tertiary03 tertiary04'
     'secondary01 secondary01 Main01 Main01 secondary02 secondary02'
@@ -721,7 +723,6 @@ textarea {
 .Main01 {
   grid-area: Main01;
   background-color: #00458b;
-  border: 1px dotted black;
   background-image: url(/assets/images/drinkapi002.PNG);
   background-position: center;
   background-repeat: no-repeat;
@@ -731,7 +732,6 @@ textarea {
 .Main02 {
   grid-area: Main02;
   background-color: rgb(255, 255, 255);
-  border: 1px dotted black;
   background-image: url(/assets/images/Optimized-star-wars-api.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -741,7 +741,6 @@ textarea {
 .Main03 {
   grid-area: Main03;
   background-color: rgb(255, 255, 255);
-  border: 1px dotted black;
   background-image: url(/assets/images/burgerimg.PNG);
   background-position: top;
   background-repeat: no-repeat;
@@ -750,8 +749,6 @@ textarea {
 
 .secondary01 {
   grid-area: secondary01;
-  background-color: green;
-  border: 1px dotted black;
   background-image: url(/assets/images/form-valadation.PNG);
   background-position: center;
   background-repeat: no-repeat;
@@ -760,14 +757,18 @@ textarea {
 
 .secondary02 {
   grid-area: secondary02;
-  background-color: green;
-  border: 1px dotted black;
+  background-image: url(/assets/images/form-valadation.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
 }
 
 .secondary03 {
   grid-area: secondary03;
-  background-color: green;
-  border: 1px dotted black;
+  background-image: url(/assets/images/form-valadation.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
 }
 
 .tertiary01 {
@@ -777,17 +778,27 @@ textarea {
   background-size: contain;
   grid-area: tertiary01;
   background-color: #242333;
-  border: 1px dotted black;
 }
 
-.tertiary01:hover .img__description {
+.tertiary01:hover .img__description,
+.tertiary02:hover .img__description,
+.tertiary03:hover .img__description,
+.tertiary04:hover .img__description,
+.tertiary05:hover .img__description,
+.tertiary06:hover .img__description,
+.secondary02:hover .img__description,
+.secondary01:hover .img__description,
+.secondary03:hover .img__description,
+.Main03:hover .img__description,
+.Main02:hover .img__description,
+.Main01:hover .img__description {
   visibility: visible;
   opacity: 1;
 }
 
 .img__description {
   height: 100%;
-  background: rgba(29, 106, 154, 0.72);
+  background: rgba(0, 0, 0, 0.72);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -798,32 +809,47 @@ textarea {
 
 .tertiary02 {
   grid-area: tertiary02;
-  background-color: red;
-  border: 1px dotted black;
+  background-image: url(/assets/images/movieseats.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #242333;
 }
 
 .tertiary03 {
   grid-area: tertiary03;
-  background-color: red;
-  border: 1px dotted black;
+  background-image: url(/assets/images/movieseats.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #242333;
 }
 
 .tertiary04 {
   grid-area: tertiary04;
-  background-color: red;
-  border: 1px dotted black;
+  background-image: url(/assets/images/movieseats.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #242333;
 }
 
 .tertiary05 {
   grid-area: tertiary05;
-  background-color: red;
-  border: 1px dotted black;
+  background-image: url(/assets/images/movieseats.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #242333;
 }
 
 .tertiary06 {
   grid-area: tertiary06;
-  background-color: red;
-  border: 1px dotted black;
+  background-image: url(/assets/images/movieseats.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #242333;
 }
 
 @media (max-width: 1250px) {
@@ -831,6 +857,8 @@ textarea {
     width: 100%;
     height: 1500px;
     display: grid;
+    grid-gap: 8px;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(8, 250px);
     grid-template-areas:
@@ -848,6 +876,7 @@ textarea {
     width: 100%;
     height: 3200px;
     display: grid;
+    grid-gap: 6px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 250px);
     grid-template-areas:
@@ -866,67 +895,10 @@ textarea {
   }
 }
 
-.page {
-  padding: 2em;
-  background: #cecece;
-  max-width: 1500px;
-  margin: auto;
+.grid-container > a {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.archive {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
-  grid-auto-flow: dense;
-}
-
-.article {
-  padding: 1em;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
-}
-
-.article:nth-child(1) {
-  grid-column: 2 / -2;
-  background: rgba(200, 200, 255, 0.3);
-}
-
-.article:nth-child(1) > hr:last-child {
-  margin-right: 20%;
-  height: 28px;
-}
-
-.article:nth-child(1):after {
-  content: 'grid-column: 1 / -1';
-}
-
-.article:nth-child(8) {
-  grid-column: -3 / -1;
-  background: rgba(255, 200, 255, 0.3);
-}
-.article:nth-child(8):after {
-  content: 'grid-column: -3 / -1';
-}
-
-.article:nth-child(12) {
-  grid-column: 1 / -2;
-  background: rgba(255, 200, 255, 0.3);
-}
-
-.article:nth-child(12) > hr:first-child {
-  padding-bottom: 30%;
-}
-
-.article:nth-child(12):after {
-  content: 'grid-column: 1 / -2';
-}
-
-.article:after {
-  color: #808;
-  font-weight: bold;
-  font-family: courier;
-}
-
-@media (max-width: 680px) {
-}
+.grid-container > a:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
