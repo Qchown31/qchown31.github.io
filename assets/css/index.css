@@ -116,12 +116,11 @@ div#about-grid {
   display: grid;
   grid-gap: 50px;
   grid-template-columns: 50% 50%;
-  margin: 100px auto;
+  margin: auto;
 }
 h1#About {
   text-align: center;
   padding: 25px;
-  margin-bottom: 30px;
   width: 100%;
   height: 100px;
   background: #00458b;
@@ -226,7 +225,16 @@ div.skill-block:hover {
   cursor: default;
   transform: scale(1.5);
   transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
 } */
+
+#about-background {
+  background-color: white;
+  padding: 100px 0;
+}
 
 @media only screen and (max-width: 995px) {
   #skills {
@@ -698,17 +706,18 @@ textarea {
   } */
 }
 
+
 /* new project section */
 /* new project section */
 
 .grid-container {
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  margin: 100px auto;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-areas:
     'tertiary01 tertiary02 Main01 Main01 tertiary03 tertiary04'
     'secondary01 secondary01 Main01 Main01 secondary02 secondary02'
@@ -757,10 +766,10 @@ textarea {
 
 .secondary02 {
   grid-area: secondary02;
-  background-image: url(/assets/images/form-valadation.PNG);
-  background-position: center;
+  background-image: url(/assets/images/oop-class.PNG);
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
 }
 
 .secondary03 {
@@ -895,10 +904,48 @@ textarea {
   }
 }
 
+
+
 .grid-container > a {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding: 0;
 }
 
 .grid-container > a:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+
+  
+
+
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #000 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
